@@ -1,0 +1,39 @@
+/* Style for the button and box */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes moveBox {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
